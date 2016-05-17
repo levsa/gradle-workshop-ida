@@ -84,10 +84,12 @@ asciidoctor {
 				'idprefix': '',
 				'idseparator': '-',
 				'docinfo1': '',
-				'revealjs_theme': 'black',
 				'revealjs_transition': 'linear',
 				'revealjs_history': 'true',
-				'revealjs_slideNumber': 'true'
+				'revealjs_slideNumber': 'true',
+				'revealjs_customtheme': file('customtheme.css')
+
+				//'revealjs_theme': 'night',
 
 	options template_dirs : [new File(templateDir,'templates/slim').absolutePath ]
 
