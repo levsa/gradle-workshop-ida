@@ -1,6 +1,6 @@
-# Gradle Workshop
+# Kodstuga Gradle
 
-JavaZone 2012
+Ida Infront
 
 ## About Me
 

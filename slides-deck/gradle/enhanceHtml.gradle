@@ -4,7 +4,7 @@ import org.jsoup.select.Elements
 import com.uwyn.jhighlight.renderer.XhtmlRendererFactory
 
 task enhancedHtml(type: Jsoup) {
-    outputs.upToDateWhen { false }
+    //outputs.upToDateWhen { false }
     source markdown
 
     // Wrap each section in a “section”.

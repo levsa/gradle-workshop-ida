@@ -13,7 +13,7 @@ task downloadDeckExtJs(type: DownloadZipAndUnpack) {
 }
 
 task slideshowHtml(type: Jsoup) {
-    outputs.upToDateWhen { false }
+    //outputs.upToDateWhen { false }
     source enhancedHtml
     ext.headHtml = file("src/slideshow/head.html").getText("utf-8")
     inputs.property("headHtml", headHtml)

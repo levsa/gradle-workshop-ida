@@ -10,7 +10,7 @@ Gradle can automate the building, testing, publishing, deployment and more of so
 * Implemented in Java, Groovy outer layer
 * 100% Free Open Source - Apache Standard License 2.0
 
-![Gradle Logo](images/gradle.png)
+![Ida Infront Logo](images/idainfront.png)
 <p style="text-align: center">[http://www.gradle.org](http://www.gradle.org)</p>
 
 ## Gradleware
@@ -23,7 +23,7 @@ The company behind Gradle.
 * General build automation services
 
 <p style="text-align: center">Germany, Australia, UK, Poland, Austria, Canada and the US.</p>
-![Gradleware Logo](images/gradleware.png)
+![Ida Infront Logo](images/idainfront.png)
 <p style="text-align: center">[http://www.gradleware.com](http://www.gradleware.com)</p>
 
 ## Gradle Project
