@@ -7,6 +7,6 @@ repositories {
 dependencies {
     compile localGroovy()
     compile gradleApi()
-    compile "org.pegdown:pegdown:1.1.0"
+    compile "org.pegdown:pegdown:1.6.0"
 }
 

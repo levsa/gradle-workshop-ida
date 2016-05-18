@@ -20,5 +20,5 @@
 
 # Lab 02
 
-Quickstart                       
+Quickstart
 

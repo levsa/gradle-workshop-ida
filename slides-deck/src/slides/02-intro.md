@@ -1,4 +1,56 @@
-# Intro
+
+## Build tools
+
+* Make
+* Ant
+    * XML, JVM
+    * Java för custom tasks
+* Maven
+    * XML
+    * Java for custom tasks
+    * Dependency management
+* Gradle
+    * DSL (Domain Specific Language)
+    * Java/Groovy
+    * Dependency management
+
+## Maven vs Gradle
+
+
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+    <p><code>
+task &lt;&lt; {
+    println &quot;hello&quot;
+}
+</code></p>       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
+
+``` groovy
+task foo << {
+    
+}
+```
+
+<table width="80%">
+<tr><th>Maven</th><th>Gradle</th></tr>
+<tr><td>
+    
+</td>
+<td>
+        task foo << {
+            
+        }
+</td>
+</tr>
+</table>
+
+
 
 ## Gradle
 

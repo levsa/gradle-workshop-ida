@@ -29,7 +29,7 @@ class PegDown extends SourceTask {
 
     @Input
     @Optional
-    List<String> options
+    List<String> options = []
 
     @Input
     String inputEncoding
@@ -51,6 +51,7 @@ class PegDown extends SourceTask {
     @TaskAction
     void process() {
         int optionsValue = getCalculatedOptions()
+        getLogger().info("optionsValue " + optionsValue)
         PegDownProcessor processor = new PegDownProcessor(optionsValue)
         String markdown = getSource().singleFile.getText(getInputEncoding())
         String html = processor.markdownToHtml(markdown)
@@ -62,8 +63,9 @@ class PegDown extends SourceTask {
     }
     
     protected int toOptionValue(String optionName) {
-        String upName = val.toUpperCase()
+        String upName = optionName.toUpperCase()
         try {
+            getLogger().info("Adding option " + optionName)
             Extensions."$upName"
         } catch (MissingPropertyException e) {
             throw new InvalidUserDataException("$optionName is not a valid PegDown extension name")
@@ -71,6 +73,7 @@ class PegDown extends SourceTask {
     }
     
     void options(String... options) {
+        getLogger().info("Configure: Adding options " + options.join(', '))
         this.options.addAll(options)
     }
 }

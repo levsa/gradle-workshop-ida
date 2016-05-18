@@ -2,12 +2,14 @@ import org.gradle.plugins.jsoup.Jsoup
 
 task downloadDeckJs(type: DownloadZipAndUnpack) {
     zipUrl "https://github.com/imakewebthings/deck.js/zipball/c77cfb7148114873bc9b682ba73288c5275b6175"
+    //zipUrl "https://github.com/imakewebthings/deck.js/archive/latest.zip"
     destination file("$downloadDir/deck.js")
     nested true
 }
 
 task downloadDeckExtJs(type: DownloadZipAndUnpack) {
     zipUrl "https://github.com/barraq/deck.ext.js/zipball/a4d2d7f9fc5773186e45713f35a221f596345c86"
+    //zipUrl "https://github.com/barraq/deck.ext.js/archive/0.1.1.zip"
     destination file("$downloadDir/deck.ext.js")
     nested true
 }

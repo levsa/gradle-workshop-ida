@@ -2,18 +2,9 @@
 
 Ida Infront
 
-## About Me
+## Overview
 
-* Peter Niederwieser ([@pniederw](http://twitter.com/pniederw))
-* Principal Engineer at Gradleware
-* peter.niederwieser@gradleware.com
-
-Started using Gradle in 2010, joined Gradleware in 2011
-
-Occasional Groovy committer, creator of [Spock](http://spockframework.org)
-
-## Topics for Today
-
+* Build tools
 * Introduction to Gradle
 * Incremental build
 * Build scripts
@@ -23,15 +14,7 @@ Occasional Groovy committer, creator of [Spock](http://spockframework.org)
 * Dependency management
 * Multi-Project builds
 
-## You
-
-* Your background
-    * What Groovy/Gradle experience do you have?
-    * What build systems are you using or have experience with?
-
-# Lab 01
-
-Setup
+<!-- Setup
 
 ## Gradle Setup
 
@@ -42,4 +25,4 @@ Setup
 1. Add `GRADLE_HOME/bin` to the `PATH` environment variable.
 1. Activate the Gradle Daemon by setting the environment variable `GRADLE_OPTS` to `-Dorg.gradle.daemon=true`.
 1. Open a terminal and execute `gradle -v`.
-
+ -->

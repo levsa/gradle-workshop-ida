@@ -11,6 +11,20 @@ $(function() {
           e.preventDefault();
         }
       });
+
+      $["deck"]('getOptions').classes.menu = 'deck-menu';
+      $["deck"]('getOptions').keys.menu = 77; // 'm'
+      
+      $.extend(true, $.deck.defaults, {
+        classes: {
+          menu: 'deck-menu'
+        },
+
+        keys: {
+          menu: 77 // 'm'
+        }
+      });
+
   });
 
   // override the notes handler because it's bugged

@@ -26,15 +26,10 @@ task concatMarkdown(type: FileConcatTask) {
     source fileTree("src/slides") { include "*.md" }
     destination "$buildDir/all.md"
     joiner "\n\n".getBytes("UTF-8")
-    doFirst {
-        println "LEVON:"
-        println inputs.files.each { println it }
-        println "LEVON:"
-        println outputs.files.each { println it }
-    }
 }
 
 task markdown(type: PegDown) {
     source concatMarkdown
     destination "$buildDir/html/raw.html"
+    options "all"
 }
