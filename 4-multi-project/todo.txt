@@ -1,7 +1,7 @@
 * Create a multi-project build for the sub projects api, backend, and application
     - application depends on both api and backend
     - backend depends on api
-    - optional to use root build.gradle or build.gradle in sub-projects
+    - optional to only use root build.gradle or also use build.gradle in sub-projects
 
 * Change application version and rebuild
     - Run the application with gradle :application:runApp, check the version
