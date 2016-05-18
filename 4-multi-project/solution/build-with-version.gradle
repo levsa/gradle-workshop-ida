@@ -42,6 +42,7 @@ project(':backend') {
     }
 
     processResources {
+        inputs.property "version", version
         filesMatching('**/version.properties') {
             expand(applicationVersion: version)
         }
