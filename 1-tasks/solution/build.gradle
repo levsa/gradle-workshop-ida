@@ -1,0 +1,20 @@
+task hello {
+    doFirst {
+        println "Hello world"
+    }
+}
+
+task date {
+    doFirst {
+        println new Date()
+    }
+}
+
+task prepare {
+    dependsOn date
+    doFirst {
+        println "Prepare for the greeting..."
+    }
+}
+
+hello.dependsOn prepare

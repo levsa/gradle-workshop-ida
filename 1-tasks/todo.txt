@@ -1,0 +1,3 @@
+* Create a task that prints the current date
+* Create another tasks that depends on date and prints something else
+* Add a dependency to the last task from the hello task

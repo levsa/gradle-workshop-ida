@@ -1,0 +1,14 @@
+task defaultHello(type: Greeting)
+
+task idaHello(type: Greeting) {
+    greeting = "Hello from Ida Infront"
+}
+
+class Greeting extends DefaultTask {
+    String greeting = 'Hello from Gradle'
+
+    @TaskAction
+    void printGreeting() {
+        println greeting
+    }
+}

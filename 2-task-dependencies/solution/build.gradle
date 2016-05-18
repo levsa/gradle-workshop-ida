@@ -1,0 +1,13 @@
+task hello {
+    doFirst {
+        println "Hello world"
+    }
+}
+
+task otherTask {
+    doFirst {
+        println "Prepare for the greeting..."
+    }
+}
+
+hello.dependsOn otherTask
