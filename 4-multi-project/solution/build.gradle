@@ -1,0 +1,57 @@
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+
+
+    dependencies {
+        compile 'org.slf4j:slf4j-api:1.7.21'
+
+        runtime 'ch.qos.logback:logback-classic:1.1.7'
+
+        testCompile 'junit:junit:4.12'
+        testCompile "org.mockito:mockito-all:1.10.19"
+    }
+
+    task runApp(type: JavaExec) {
+      classpath = sourceSets.main.runtimeClasspath
+
+      main = 'com.iipax.edu.Application'
+    }
+}
+
+[':backend', ':application'].each { projectPath ->
+    project(projectPath) {
+        dependencies {
+            compile 'org.slf4j:slf4j-api:1.7.21'
+
+            runtime 'ch.qos.logback:logback-classic:1.1.7'
+
+            testCompile 'junit:junit:4.12'
+            testCompile "org.mockito:mockito-all:1.10.19"
+        }
+    }
+}
+
+project(':backend') {
+    dependencies {
+        compile project(':api')
+    }
+
+    processResources {
+        inputs.property "version", version
+        filesMatching('**/version.properties') {
+            expand(applicationVersion: version)
+        }
+    }
+}
+
+project(':application') {
+    dependencies {
+        compile project(':api')
+        compile project(':backend')
+    }
+}
