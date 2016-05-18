@@ -7,3 +7,5 @@
     - Run the application with gradle :application:runApp, check the version
     - Change version in gradle.properties
     - Rerun the application, what happened?
+
+* Add checkstyle plugin to all projects and make sure it is run as part of gradle check
