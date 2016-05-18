@@ -9,3 +9,7 @@
     - Rerun the application, what happened?
 
 * Add checkstyle plugin to all projects and make sure it is run as part of gradle check
+    - https://docs.gradle.org/current/dsl/org.gradle.api.plugins.quality.CheckstyleExtension.html
+    - use config file in root: google_checks.xml
+    - use tool version 6.5
+    - See build/reports/ in subprojects
