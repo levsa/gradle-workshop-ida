@@ -1,3 +1,0 @@
-include "pegdown"
-include "jsoup"
-include "lesscss"
