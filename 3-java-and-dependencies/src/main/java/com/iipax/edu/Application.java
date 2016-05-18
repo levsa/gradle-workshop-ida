@@ -2,9 +2,13 @@ package com.iipax.edu;
 
 import java.io.PrintStream;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Application
 {
     private Service service;
+    private static Logger LOG = LoggerFactory.getLogger(Application.class);
 
     public Application(Service service)
     {
@@ -13,7 +17,9 @@ public class Application
 
     public void printVersion(PrintStream printStream)
     {
-        printStream.println("Application version: " + service.getVersion());
+        String version = service.getVersion();
+        LOG.debug("Printing version: " + version);
+        printStream.println("Application version: " + version);
     }
 
     public static void main(String[] args)
