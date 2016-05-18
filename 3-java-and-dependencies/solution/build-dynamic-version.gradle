@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version='1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile "org.mockito:mockito-all:1.10.19"
+}
+
+processResources {
+    filesMatching('**/version.properties') {
+        expand(applicationVersion: version)
+    }
+}
+
+task runApp(type: JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'com.iipax.edu.Application'
+}
+

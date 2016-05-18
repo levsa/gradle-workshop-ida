@@ -4,3 +4,5 @@
         Group  org.mockito, artifact id: mockito-all, version  1.10.19
 
 * Create a run task for the application, using the task type JavaExec.
+
+* Add support to update version in the version.properties file from gradle project version.
