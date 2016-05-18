@@ -1,0 +1,4 @@
+* Create a java project with the following Java classes and tests
+    - Test dependencies:
+        Group junit, artifact id junit, version 4.12
+        Group  org.mockito, artifact id: mockito-all, version  1.10.19
