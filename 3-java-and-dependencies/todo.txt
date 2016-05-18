@@ -6,3 +6,5 @@
 * Create a run task for the application, using the task type JavaExec.
 
 * Add support to update version in the version.properties file from gradle project version.
+
+* Create a copy task that copies all dependencies into a libs folder in the build directory
