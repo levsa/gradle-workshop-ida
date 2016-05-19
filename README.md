@@ -6,6 +6,9 @@ Labs
 
 * Clone https://github.com/levsa/gradle-workshop-ida/ or download zipball.
 
+Presentation
+------------
+[Online presentation](https://docs.google.com/presentation/d/1bPom0cOXYWYbSqTujPGoY10EnWaRVqqP6Atrsq8L0dI/edit?usp=sharing)
 
 Use gradle wrapper:
 -------------------
